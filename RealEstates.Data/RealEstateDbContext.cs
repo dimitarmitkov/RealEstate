@@ -31,7 +31,7 @@ namespace RealEstates.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server = localhost, 1433; Database = RealEstate; User = sa; Password = reallyStrongPwd123;");
+                optionsBuilder.UseSqlServer(@"Server = localhost, 1433; Database = RealEstate; User = {please enter User}; Password = {please enter password};");
             }
         }
 
