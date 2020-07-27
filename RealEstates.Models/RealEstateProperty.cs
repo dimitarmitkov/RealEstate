@@ -16,6 +16,7 @@ namespace RealEstates.Models
 
         public int? Floor { get; set; }
 
+        public int? TotalNumberOfFloors { get; set; }
 
         public int DistrictId { get; set; }
 
