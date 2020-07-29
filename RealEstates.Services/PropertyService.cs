@@ -66,7 +66,7 @@ namespace RealEstates.Services
 
         }
 
-        public IEnumerable<PropertyViewModel> Serch(int minYear, int maxYear, int minSize, int maxSize)
+        public IEnumerable<PropertyViewModel> Search(int minYear, int maxYear, int minSize, int maxSize)
         {
             return db.RealEstateProperties.Where(x => x.Year >= minYear && x.Year <= maxYear && x.Size >= minSize && x.Size <= maxSize)
                 .Select(MapToPropertyViewModel())
